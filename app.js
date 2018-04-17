@@ -50,7 +50,7 @@ app.use(cookieParser());
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'app_client')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use(passport.initialize());
 
@@ -70,7 +70,7 @@ res.json({"message" : err.name + ": " + err.message});
 });
 
 app.use(function(req, res) {
-res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
+res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 
