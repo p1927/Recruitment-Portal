@@ -1,0 +1,86 @@
+/****************************************SIGNUP BUTTON****************************************/
+.nav_userbtn .signbtn{
+background-color:  #4aa3ff;
+color: white ;
+font-size: 1em;
+}
+
+
+.nav_userbtn .signbtn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.nav_userbtn  .signbtn:hover {
+  color:#0069d9 ;
+  background-color: white;
+  border-color: #0069d9;
+}
+/***************************************NAVBAR*************************************************/
+.navcom{
+	font-size: 1rem;
+	vertical-align: middle;
+
+
+}
+/***************************************NAVlink active*************************************************/
+.nav-item.active > .nav-link{
+	position: relative;
+}
+.nav-item.active > .nav-link:after{
+    content: '';
+    border-bottom: 2px solid white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 90%;
+    height: 10px;
+
+}
+
+
+
+/*/////////////////////////////////////////////////////////FROM 768 TO 1100 PIXELS///////////////////////////////////////////////////////*/
+@media screen and (min-width: 768px) and (max-width: 1100px)
+{
+	/************************************NAVBAR FONT ADJUSTMENT*****************************************/
+.navcom{
+	font-size: 1.30vw;
+	vertical-align: middle;
+
+}
+
+.navcom .navbar{ padding: 0.5rem 0.5rem;
+
+}
+
+}
+/*************************************************************************************************************/
+
+/*/////////////////////////////////////////////////////////upto 768 ///////////////////////////////////////////////////////*/
+@media screen and (max-width: 767px) 
+{
+  /************************************NAVBAR ACTIVE BOX SHADOW RESET*****************************************/ 
+.nav-item.active > .nav-link:after{ width:0px;
+	height:0px;
+}
+
+  /************************************NAVBAR HALF OPTION MENU ADJUSTMENT*****************************************/
+ nav {
+  position: relative;
+ }
+#navbarContent {
+  position: absolute;
+  right:0%;
+  top:50px;
+  width:30%;
+  min-width: 200px;
+  background-color: #007bff;
+  padding:1rem;
+  border-radius: 5px;
+}
+
+
+
+}
+/*************************************************************************************************************/
