@@ -10,6 +10,7 @@ import { FindjobComponent } from './findjob/findjob.component';
 
 import { SizerDirective } from './directive/sizer/sizer.directive';
 import { CompanyReviewComponent } from './company-review/company-review.component';
+import { TrainingComponent, Para,Person } from './training/training.component';
 
 
 
@@ -20,7 +21,9 @@ import { CompanyReviewComponent } from './company-review/company-review.componen
     SizerDirective,
     NavfooterComponent,
     FindjobComponent,
-    CompanyReviewComponent
+    CompanyReviewComponent,
+    TrainingComponent,
+    Para, Person
 
   ],
   imports: [
